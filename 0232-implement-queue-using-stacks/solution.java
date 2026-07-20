@@ -1,9 +1,10 @@
 class MyQueue {
     Stack<Integer> s1;
     Stack<Integer> s2;
+    
     public MyQueue() {
-       s1=new Stack<>();
-       s2=new Stack<>(); 
+        s1=new Stack<>();
+        s2=new Stack<>();
     }
     
     public void push(int x) {
@@ -29,9 +30,7 @@ class MyQueue {
     }
     
     public boolean empty() {
-        if(s1.isEmpty()&&s2.isEmpty())
-            return true;
-        return false;
+        return (s1.isEmpty() && s2.isEmpty());
     }
 }
 
